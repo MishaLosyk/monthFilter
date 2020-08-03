@@ -1,0 +1,86 @@
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.month {
+
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: 200px;
+    padding: 40px;
+    background-color: rgb(131, 113, 235);
+    color: white;
+    transition: 0.3s ease-out;
+
+    
+}
+
+.month:nth-child(4n){
+
+    margin-right: 0;
+}
+
+.month span {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.month:hover {
+
+    border-width: 12px;
+    background-color: #fff;
+    color: rgb(99, 109, 119);
+    
+}
+
+.month:hover .userList {
+  display: block;
+  position: absolute;
+  opacity: 1;
+
+
+}
+
+.userList {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid rgba(99, 109, 119, 0.2);
+    color: rgb(99, 109, 119);
+  }
+
+  .userList p {
+      margin-top: 5px;
+  }
+
+
+  
+.gray {
+    background-color: gray;
+    border: 0px solid gray;
+}
+
+.blue {
+    background-color: rgb(104, 155, 231);
+    border: 0px solid rgb(104, 155, 231);
+}
+
+.green {
+    background-color: rgb(80, 182, 131);
+    border: 0px solid rgb(80, 182, 131);
+}
+
+.red {
+    background-color: #e96663;
+    border: 0px solid #e96663;
+}

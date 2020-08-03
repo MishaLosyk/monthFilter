@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="month" *ngFor='let it of monthNumber; let i = index' [ngClass]="{
+        red: (users | filter:i).length > 10,
+        green: (users | filter:i).length < 11 && (users | filter:i).length > 6,
+        blue: (users | filter:i).length < 7 && (users | filter:i).length > 2,
+        gray: (users | filter:i).length < 3 
+    }">
+        <span>{{it}}</span>
+        <div class='userList'><p *ngFor='let user of users | filter : i'>{{user.firstName}} {{user.lastName}}</p></div>
+    </div>
+
+</div>
+
+    <div ></div>
+
